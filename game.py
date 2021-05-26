@@ -1,5 +1,7 @@
 # game.py
-print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
+print("'Rock', 'Paper', 'Scissors,' 'Shoot!'")
+PLAYER_NAME = input ("Please select a player name:")
+print("WELCOME" f"{PLAYER_NAME} to my Rock-Paper-Scissors game...")
 
 import random
 
@@ -8,7 +10,7 @@ user_choice = input("Please choose either 'rock', 'paper', or 'scissors': ")
 print("You chose: ", user_choice)
 
 if (user_choice == "rock") or (user_choice == "paper") or (user_choice == "scissors"):
-    print("VALID. Keep going.")
+    print("Thank you for choosing.")
 else:
     print("OOPS, invalid input. Please try again.")
     exit()
