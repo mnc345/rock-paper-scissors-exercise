@@ -1,9 +1,19 @@
 # game.py
+
 print("'Rock', 'Paper', 'Scissors,' 'Shoot!'")
-PLAYER_NAME = input ("Please select a player name:")
-print("WELCOME" f"{PLAYER_NAME} to my Rock-Paper-Scissors game...")
 
 import random
+
+import os
+
+
+PLAYER_NAME = os.getenv("PLAYER_NAME")
+print (PLAYER_NAME)
+
+
+#non .env way
+#PLAYER_NAME = input ("Please select a player name:")
+#print("WELCOME" f"{PLAYER_NAME} to my Rock-Paper-Scissors game...")
 
 user_choice = input("Please choose either 'rock', 'paper', or 'scissors': ")
 
