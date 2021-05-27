@@ -6,10 +6,12 @@ import random
 
 import os
 
+import dotenv
+
+dotenv.load_dotenv()
 
 PLAYER_NAME = os.getenv("PLAYER_NAME")
-print (PLAYER_NAME)
-
+print(f"Welcome '{PLAYER_NAME}' to my Rock-Paper-Scissors game!")
 
 #non .env way
 #PLAYER_NAME = input ("Please select a player name:")

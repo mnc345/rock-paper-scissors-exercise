@@ -1,4 +1,3 @@
-
-# this is the "requirements.txt" file.
+#requirements.txt
 
 python-dotenv
