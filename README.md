@@ -32,14 +32,21 @@ pip install -r requirements.txt
 
 > NOTE: if this command throws an error like "Could not open requirements file: [Errno 2] No such file or directory", make sure you are running it from the repository's root directory, where the requirements.txt file exists (see the initial `cd` step above).
 
+## Setup
+
+In in the root directory of your local repository, create a new file called ".env", and update the contents of the ".env" file to specify your desired player name:
+
+    PLAYER_NAME="Molly"
+
+
+> NOTE: the ".env" file is usually the place for passing configuration options and secret credentials, so as a best practice we don't upload this file to version control (which is accomplished via a corresponding entry in the [".gitignore"](/.gitignore) file). This means each person who uses our code needs to create their own local ".env" file.
+
 ## Usage
 
 Run the game script:
 
 ```py
 python game.py
-
-When prompted, choose a player name.
 
 When prompted, choose rock, paper, scissors.
 
